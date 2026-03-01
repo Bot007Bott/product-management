@@ -37,4 +37,4 @@ RUN echo '<VirtualHost *:80>\n\
 
 EXPOSE 80
 
-CMD php artisan migrate --force && apache2-foreground
+CMD bash -c "php artisan migrate --force && apache2-foreground"
